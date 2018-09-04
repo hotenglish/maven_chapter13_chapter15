@@ -19,7 +19,6 @@
         <connection>scm:git:ssh://git@github.com:hotenglish/maven_chapter13_chapter15.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:hotenglish/maven_chapter13_chapter15.git</developerConnection>
         <url>https://github.com/hotenglish/maven_chapter13_chapter15</url>
-        <tag>account-parent-1.0.4</tag>
     </scm>
 
     <properties>
