@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.juvenxu.mvnbook.account</groupId>
     <artifactId>account-parent</artifactId>
-    <version>1.0.4-snapshot</version>
+    <version>1.0.4</version>
     <packaging>pom</packaging>
     <name>Account Parent</name>
 
@@ -20,7 +19,7 @@
         <connection>scm:git:ssh://git@github.com:hotenglish/maven_chapter13_chapter15.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:hotenglish/maven_chapter13_chapter15.git</developerConnection>
         <url>https://github.com/hotenglish/maven_chapter13_chapter15</url>
-        <tag>account-parent-1.0.3</tag>
+        <tag>account-parent-1.0.4</tag>
     </scm>
 
     <properties>
