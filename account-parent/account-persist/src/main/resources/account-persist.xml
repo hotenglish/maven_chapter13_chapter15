@@ -10,7 +10,7 @@
     </bean>
 
     <bean id="accountPersistService" class="com.juvenxu.mvnbook.account.persist.AccountPersistServiceImpl">
-        <property name="file" value="${persist.file}"/>
+        <property name="file" value="/home/laimaosheng/Server/persist-data.xml"/>
     </bean>
 
 </beans>
