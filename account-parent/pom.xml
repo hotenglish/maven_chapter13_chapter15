@@ -19,7 +19,6 @@
         <connection>scm:git:https://github.com/hotenglish/maven_chapter13_chapter15.git</connection>
         <developerConnection>scm:git:https://github.com/hotenglish/maven_chapter13_chapter15.git</developerConnection>
         <url>https://github.com/hotenglish/maven_chapter13_chapter15</url>
-      <tag>HEAD</tag>
   </scm>
 
     <properties>
