@@ -16,8 +16,8 @@
     </modules>
 
     <scm>
-        <connection>scm:git:https://github.com/hotenglish/maven_chapter13_chapter15.git</connection>
-        <developerConnection>scm:git:https://github.com/hotenglish/maven_chapter13_chapter15.git</developerConnection>
+        <connection>scm:git:ssh://git@github.com:hotenglish/maven_chapter13_chapter15.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:hotenglish/maven_chapter13_chapter15.git</developerConnection>
         <url>https://github.com/hotenglish/maven_chapter13_chapter15</url>
     <tag>HEAD</tag>
   </scm>
@@ -114,10 +114,15 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>2.5.3</version>
                     <configuration>
+                        <username>hotenglish@outlook.com</username>
+                        <password>cos90=00</password>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <useReleaseProfile>false</useReleaseProfile>
                         <releaseProfiles>release</releaseProfiles>
                         <goals>deploy</goals>
+                        <checkModificationExcludes>
+                            <checkModificationExclude>/.idea</checkModificationExclude>
+                        </checkModificationExcludes>
                     </configuration>
                 </plugin>
             </plugins>
