@@ -5,11 +5,11 @@
     <parent>
         <groupId>com.juvenxu.mvnbook.account</groupId>
         <artifactId>account-parent</artifactId>
-        <version>1.0.2-SNAPSHOT</version>
+        <version>1.0.2</version>
     </parent>
 
     <artifactId>account-captcha</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.2</version>
     <name>Account Captcha</name>
 
     <properties>
