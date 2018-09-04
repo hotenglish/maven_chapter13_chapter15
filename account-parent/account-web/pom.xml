@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>com.juvenxu.mvnbook.account</groupId>
+        <artifactId>account-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>account-web</artifactId>
+    <packaging>war</packaging>
+    <name>Account Web</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>account-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+
+        <finalName>account</finalName>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.4.5.v20170502</version>
+                <configuration>
+                    <scanIntervalSeconds>10</scanIntervalSeconds>
+                    <stopKey>shutdown</stopKey>
+                    <stopPort>3868</stopPort>
+                    <webAppConfig>
+                        <contextPath>/account</contextPath>
+                    </webAppConfig>
+                </configuration>
+            </plugin>
+
+<!--            <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <version>1.6.9</version>
+                <configuration>
+                    <container>
+                        <containerId>tomcat8x</containerId>
+                        &lt;!&ndash;<home>/home/laimaosheng/Server/apache-tomcat-8.5.32</home>&ndash;&gt;
+                        <type>remote</type>
+                    </container>
+                    <configuration>
+
+                        &lt;!&ndash; for standalone &ndash;&gt;
+                        &lt;!&ndash;<type>standalone</type>&ndash;&gt;
+                        &lt;!&ndash;<home>${project.build.directory}/apache-tomcat-8.5.32</home>&ndash;&gt;
+
+                        &lt;!&ndash; for existing &ndash;&gt;
+                        &lt;!&ndash;<type>existing</type>&ndash;&gt;
+                        &lt;!&ndash;<home>/home/laimaosheng/Server/apache-tomcat-8.5.32</home>&ndash;&gt;
+
+                        &lt;!&ndash; for Remote Deployment &ndash;&gt;
+                        <type>runtime</type>
+                        <properties>
+                            <cargo.remote.username>tomcat</cargo.remote.username>
+                            <cargo.remote.password>123</cargo.remote.password>
+                            <cargo.remote.manager.url>http://localhost:8080/manager</cargo.remote.manager.url>
+                        </properties>
+                    </configuration>
+                </configuration>
+            </plugin>-->
+
+        </plugins>
+
+    </build>
+
+</project>
