@@ -4,7 +4,7 @@
     <parent>
         <artifactId>account-parent</artifactId>
         <groupId>com.juvenxu.mvnbook.account</groupId>
-        <version>1.0.3</version>
+        <version>1.0.4-snapshot</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
