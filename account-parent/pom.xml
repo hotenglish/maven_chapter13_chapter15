@@ -121,7 +121,7 @@
                         <releaseProfiles>release</releaseProfiles>
                         <goals>deploy</goals>
                         <checkModificationExcludes>
-                            <checkModificationExclude>/.idea</checkModificationExclude>
+                            <checkModificationExclude>workspace.xml</checkModificationExclude>
                         </checkModificationExcludes>
                     </configuration>
                 </plugin>
