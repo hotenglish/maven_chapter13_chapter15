@@ -18,9 +18,9 @@
     </modules>
 
     <scm>
-        <connection>scm:git:https://github.com/hotenglish/hudson_maven_chapter13.git</connection>
-        <developerConnection>scm:git:https://github.com/hotenglish/hudson_maven_chapter13.git</developerConnection>
-        <url>https://github.com/hotenglish/hudson_maven_chapter13</url>
+        <connection>scm:git:https://github.com/hotenglish/maven_chapter13_chapter15.git</connection>
+        <developerConnection>scm:git:https://github.com/hotenglish/maven_chapter13_chapter15.git</developerConnection>
+        <url>hhttps://github.com/hotenglish/maven_chapter13_chapter15</url>
     </scm>
 
     <properties>
