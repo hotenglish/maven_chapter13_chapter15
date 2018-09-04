@@ -1,0 +1,6 @@
+#surefire_0
+#Tue Sep 04 14:25:42 CST 2018
+maven.repo.local=/home/laimaosheng/.m2/repository
+basedir=/home/laimaosheng/StudyInAction/Maven3InAction/chapter13/account-parent/account-email
+user.dir=/home/laimaosheng/StudyInAction/Maven3InAction/chapter13/account-parent/account-email
+localRepository=/home/laimaosheng/.m2/repository
